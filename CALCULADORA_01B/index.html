@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>CALCULADORA PARA NIÑOS</title>
+
+</head>
+
+<body>
+    <div class="calculator">
+        <header>
+            <h2>CALCULADORA</h2>
+        </header>
+        <div name="calculo" id="content">
+            <div class="inputs">
+                <label for="numberA"></label>
+                <input type="number" name="numberA" id="input-numberA" placeholder="TYPE A NUMBER">
+                <label for="numberB"></label>
+                <input type="number" name="numberB" id="input-numberB" placeholder="TYPE A NUMBER">
+                <div class="buttonbox">
+                    <button id="sumar" value="+" name="suma" onclick="sum()">+</button>
+                    <button id="restar" value="-" name="resta" onclick="substract()">-</button>
+                    <button id="multiplicar" value="*" name="multiplicacion" onclick="multiply()">x</button>
+                    <button id="dividir" value="/" name="division" onclick="divide()">÷</button>
+                </div>
+            </div>
+            <div class="submits">
+                <h4 id="printNumberA" class="numbers">---</h4>
+                <h4 id="printSign" class="sign">---</h4>
+                <h4 id="printNumberB">---</h4>
+                <h4 id="printResult">---</h4>
+            </div>
+        </div>
+        <script src="/app_01.js"></script>
+</body>
+
+</html>

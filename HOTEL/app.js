@@ -1,5 +1,5 @@
 //NUMERO DE NOCHES HOTEL
-var nightNumber;
+var nightNumber = 0;
 var getnightNumber = () => {
     nightNumber = parseInt(document.getElementById("nights").value);
     console.log("nºnoches: " + nightNumber);
@@ -43,7 +43,7 @@ function spaService() {
 }
 
 //NUMERO NOCHES PARKING
-var parkingNights;
+var parkingNights = 0;
 var getparkingPrice = () => {
     parkingNights = parseInt(document.getElementById("parking").value)* 10;
     console.log("Precio total Parking: " + parkingNights + " €");

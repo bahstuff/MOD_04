@@ -1,7 +1,7 @@
 //NUMERO DE NOCHES HOTEL
 var nightNumber = 0;
 var getnightNumber = () => {
-    nightNumber = parseInt(document.getElementById("nights").value);
+    nightNumber = document.getElementById("nights").value;
     console.log("nºnoches: " + nightNumber);
     return nightNumber;
 }
@@ -13,7 +13,7 @@ document.getElementById("nights").addEventListener("keyup",getnightNumber)
 // document.getElementById("roomtype").addEventListener("mouseout",roomType)
 var roomType;
 var getroomType = () => {
-    roomType = parseInt(document.getElementById("roomtype").value);
+    roomType = document.getElementById("roomtype").value;
     console.log("Precio por tipo de habitación: " + roomType + "€");
     return roomType;
 }
@@ -55,7 +55,7 @@ document.getElementById("parking").addEventListener("keyup",getparkingPrice)
 //CALCULO TOTAL
 function calculate() {
     console.log("--------CALCULO------");
-    let totalBase = roomType * nightNumber + spa;
+    let totalBase = eval(roomType * nightNumber + spa);
     console.log("Total base: " + totalBase + " €");
     let totalIncremento = eval(totalBase + totalBase * roomOcc);
     console.log("Total incremento/descuento: " + totalIncremento + " €");
